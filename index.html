@@ -4,71 +4,67 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <style>
-      .center {
-        text-align: center;
-      }
-      ul {
-          list-style: none;
-          padding: 0;
-      }
-      img {
-          display: inline;
-          width: 200px;
-          height: 100px;
-      }
-      #footer {
-          width: 100%;
-          border-top: solid 2px black;
-          background-color: white;
-          position: fixed;
-          bottom: 0;
-      }
-    </style>
+    <link rel="stylesheet" type='text/css' href="style.css">
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+  
 
   </head>
   <body>
 
-      <div id='app'>
+      <div id='app' class='container'>
 
-        <div id='headers'>
+        <div id='headers' class='center'>
           <!-- Title and subtitles! -->
+            <p><h1> It's a Super Exciting Guessing Game!!! </h1></p>
+            <p><h3> Don't get too worked up now </h3></p>
+            <p><h2> Pick a number 1 through 100 </h2></p>
         </div>
 
-        <div id='main'>
+        <div id='main' class='center'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
+            <input id='player-input' type="text" class='center' placeholder="Place Your Guess">
+            <button id='submit' type="submit" class="btn btn-danger disable"> GO! </button>
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
+            <ul id= 'guess-list'>
+                <li class='guess'> - </li>
+                <li class='guess'> - </li>
+                <li class='guess'> - </li>
+                <li class='guess'> - </li>
+                <li class='guess'> - </li>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
+            <button id= 'reset' type="button" class="btn btn-primary btn-sm active">Reset</button>
+            <button id= 'hint' type="button" class="btn btn-default btn-sm active disable">Hint</button>
           </div>
         </div>
       </div>
 
 
 
-    <div id='footer'>
-        <div>
-          <div class=''>
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
             <img src='fa-logo@2x.png'></img>
           </div>
 
-          <div class=''>
-            <h4>Project by YOUR NAME HERE</h4>
+          <div class='col-sm-4'>
+            <h5>Project by <strong>Shannon Kendall</strong></h5>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='grace_hopper_academy.png'></img>
           </div>
 
 
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = 'GuessingGame-Part2/GuessingGame.js'></script>
   </body>
 </html>

@@ -1,0 +1,69 @@
+
+html {
+    box-sizing: 'border-box';
+}
+#input-parent {
+    position: relative;
+    width: 160px;
+    margin: 0 auto;
+}
+#app{
+    background-image: url(catpaper.jpg);
+    background-position: inherit;
+    background-size: cover;
+    color: white;
+}
+.left {
+    margin: 0 auto 0 0;
+}
+.right{
+    margin: 0 0 0 auto;
+}
+.center {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+img {
+    display: inline;
+    width: 20em;
+    height: 6em;
+}
+.guess {
+    display: inline;
+    border: medium groove;
+    border-radius: 10px;
+    font-size: medium;
+    margin: 1em 1em;
+    padding: 1em;
+}
+#guesses {
+    position: relative;
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+#footer {
+    width: 100%;
+    height: 7em;
+    border-top: solid 2px red;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+#player-input {
+    color: grey;
+    border-radius: 5em;
+    height: 10em;
+    width: 10em;
+}
+#submit {
+    position: absolute;
+    bottom: -1em;
+    right: 1em;
+    border-radius: 2em;
+    height: 4em;
+    width: 4em;
+}
+
