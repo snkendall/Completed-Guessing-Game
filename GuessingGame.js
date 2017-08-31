@@ -84,13 +84,13 @@ function playerGuessed (game){
     var smallNotice = $('#headers').find('h3');
     var process = game.playersGuessSubmission(value);
     $('#player-input').val('');
+    $('#headers').find('h1').text(process);
 
     console.log(process);
     if (process === 'You have already guessed that number.'){
         smallNotice.text('You already guessed that, guess again.');
     
     } else if (process === "You Win!" || process === "You Lose."){
-        $('#headers').find('h1').text(process);
         smallNotice.text('Hit Reset to Play Again');
         $('#submit, #hint').prop('disabled', true);
     } else {
